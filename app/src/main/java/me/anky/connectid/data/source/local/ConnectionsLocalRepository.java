@@ -10,6 +10,8 @@ import android.os.RemoteException;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Callable;
 
@@ -50,6 +52,8 @@ public class ConnectionsLocalRepository implements
 
                 Log.i("MVP model", "getConnections returned " + connections.size() + " connections");
 
+                sortConnectionsAlphabetically();
+
                 return connections;
             }
         });
@@ -81,6 +85,15 @@ public class ConnectionsLocalRepository implements
                 connections.add(new ConnectidConnection(databaseId, name, description));
             }
         }
+    }
+
+    private void sortConnectionsAlphabetically() {
+        Collections.sort(connections, new Comparator<ConnectidConnection>() {
+            @Override
+            public int compare(ConnectidConnection o1, ConnectidConnection o2) {
+                return o1.getName().compareToIgnoreCase(o2.getName());
+            }
+        });
     }
 
     private Cursor getAllEntries() {
