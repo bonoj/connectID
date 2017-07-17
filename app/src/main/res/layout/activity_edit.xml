@@ -8,7 +8,7 @@
     android:gravity="center"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="me.anky.connectid.edit.EditActivity">
+    tools:context="me.bonoj.connectid.me.bonoj.connectid.edit.EditActivity">
 
     <ImageView
         android:id="@+id/edit_portrait_iv"

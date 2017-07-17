@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.anky.connectid">
+    package="me.bonoj.connectid">
 
     <!-- <uses-permission android:name="android.permission.CAMERA"></uses-permission> -->
     <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission> -->
@@ -27,7 +27,7 @@
 
         <provider
             android:name=".data.source.local.generated.ConnectidProvider"
-            android:authorities="me.anky.connectid.data.source.local.ConnectidProvider"
+            android:authorities="me.bonoj.connectid.data.source.local.ConnectidProvider"
             android:exported="false" />
 
         <activity

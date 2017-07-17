@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="me.anky.connectid.details.DetailsActivity">
+    tools:context="me.bonoj.connectid.me.bonoj.connectid.details.DetailsActivity">
 
     <ImageView
         android:id="@+id/portrait_iv"
